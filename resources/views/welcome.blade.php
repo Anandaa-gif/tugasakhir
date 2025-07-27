@@ -435,7 +435,7 @@
         <!-- Sidebar for Mobile -->
         <div class="sidebar" id="sidebar">
             <ul>
-                <li>
+                <li>`
                     <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#dashboard" type="button">
                         <i class="fas fa-home"></i> Beranda
                     </button>
@@ -662,13 +662,13 @@
             },
             {
                 id: 4,
-                judul_buku: "Matematika untuk SMA",
+                judul_buku: "Matematika untuk SMP",
                 penulis: "Budi Santoso",
                 penerbit: "Penerbit Pendidikan",
                 tahun_terbit: 2020,
                 jenis: "Non-Fiksi",
                 kategori: "Pendidikan",
-                sinopsis: "Buku pelajaran matematika untuk siswa SMA.",
+                sinopsis: "Buku pelajaran matematika untuk siswa SMP.",
                 foto: "{{ asset('storage/images/mate.png') }}"
             },
             {

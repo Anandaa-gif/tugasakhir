@@ -16,7 +16,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
         // Jadwalkan notifikasi setiap hari jam 08:00 pagi (untuk H+1)
-        $schedule->command(KirimNotifikasiPeminjaman::class)->dailyAt('08:00');
+        $schedule->command(KirimNotifikasiPeminjaman::class)->dailyAt('06:00');
 
         // Untuk testing (hapus baris atas dan aktifkan ini)
         // $schedule->command(KirimNotifikasiPeminjaman::class)->everyMinute();

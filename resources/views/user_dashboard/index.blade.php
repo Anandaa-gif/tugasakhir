@@ -15,10 +15,11 @@
             <div class="container mb-5">
                 <h3 class="text-primary mb-4">Informasi Perpustakaan Perpustakaan SMPN 3 BESUKI</h3>
                 <p class="text-secondary">
-                    Perpustakaan SMPN 3 BESUKImenyediakan koleksi buku akademik dan non-akademik untuk
-                    mendukung proses belajar-mengajar. Kami berkomitmen untuk memberikan layanan terbaik bagi
-                    mahasiswa, dosen, dan masyarakat umum.
-                    <br><strong>Lokasi:</strong> Gedung Pusat Layanan Akademik Lt. 1<br>
+                    Perpustakaan SMPN 3 Besuki merupakan pusat sumber belajar yang menyediakan beragam koleksi buku akademik
+                    dan non-akademik guna mendukung kegiatan pembelajaran di sekolah. Kami berkomitmen untuk memberikan
+                    layanan informasi yang berkualitas bagi seluruh siswa, guru, dan warga sekolah, demi terciptanya budaya
+                    literasi yang unggul dan berkelanjutan.
+                    <br><strong>Lokasi:</strong> Jl. Gn. Ringgit, Besuki, Kec. Besuki, Kabupaten Situbondo, Jawa Timur.<br>
 
                 </p>
             </div>
@@ -49,10 +50,6 @@
                     @empty
                         <div class="col-12 text-center text-muted">Tidak ada buku terbaru saat ini.</div>
                     @endforelse
-                </div>
-                <div class="text-end mt-3">
-                    <a class="btn btn-outline-primary" href="#buku"
-                        onclick="document.getElementById('buku-tab').click();">Lihat Semua Buku</a>
                 </div>
             </div>
 
