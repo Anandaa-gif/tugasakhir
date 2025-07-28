@@ -13,6 +13,7 @@ use Maatwebsite\Excel\Facades\Excel;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 
+
 class BukuController extends Controller
 {
     public function tampil5(Request $request)
@@ -174,5 +175,13 @@ class BukuController extends Controller
         Excel::import(new BukuImport, $request->file('file'));
 
         return redirect()->route('buku.tampil5')->with('success', 'Import data buku berhasil!');
+    }
+    public function qrcode($id)
+    {
+        $buku = Buku::findOrFail($id);
+        $url = route('buku.detail', $buku->id); // Tujuan QR code
+        $qrCode = QrCode::size(250)->generate($url); // Pastikan Anda sudah import use QrCode
+
+        return view('buku.qr_code', compact('buku', 'qrCode'));
     }
 }

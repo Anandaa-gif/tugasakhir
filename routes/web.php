@@ -45,13 +45,17 @@ Route::post('/anggota/import', [AnggotaController::class, 'importExcel'])->name(
 
 
 // Buku
-Route::get('/buku', [BukuController::class, 'tampil5'])->name('buku.tampil5');
+    Route::get('/buku', [BukuController::class, 'tampil5'])->name('buku.tampil5');
     Route::get('/buku/tambah', [BukuController::class, 'tambah5'])->name('buku.tambah5');
     Route::post('/buku/tambah', [BukuController::class, 'submit4'])->name('buku.submit4');
     Route::get('/buku/edit/{id}', [BukuController::class, 'edit4'])->name('buku.edit4');
     Route::put('/buku/update/{id}', [BukuController::class, 'update4'])->name('buku.update4');
     Route::delete('/buku/hapus/{id}', [BukuController::class, 'delete4'])->name('buku.delete4');
     Route::post('/buku/import', [BukuController::class, 'import'])->name('buku.import');
+    Route::get('/buku/{id}/qr_code', [BukuController::class, 'qrcode'])->name('buku.qr_code');
+
+
+
 
     // Jenis
     Route::get('/jenis', [JenisController::class, 'tampil3'])->name('jenis.tampil3');
