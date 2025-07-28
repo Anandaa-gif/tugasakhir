@@ -112,9 +112,9 @@ Route::get('/buku', [BukuController::class, 'tampil5'])->name('buku.tampil5');
 
 // Halaman Yang Tidka Perlu Login
 
-// Pendaftaran anggota
-Route::post('/daftar-anggota', [AnggotaController::class, 'daftarSubmit'])->name('anggota.daftar.submit');
-Route::view('/daftar-sukses', 'dataanggota.berhasil')->name('anggota.berhasil');
+// // Pendaftaran anggota
+// Route::post('/daftar-anggota', [AnggotaController::class, 'daftarSubmit'])->name('anggota.daftar.submit');
+// Route::view('/daftar-sukses', 'dataanggota.berhasil')->name('anggota.berhasil');
 
 // Scan QR Code
 // Pengunjung
